@@ -16,7 +16,7 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<Provider store={store}> 
+			<Provider store={store}>
 				<div className="root">
 					<h2 id="title">React.js Budget App</h2>
 					<CurrentBudget />
@@ -28,7 +28,6 @@ class App extends React.Component {
 					</div>
 				</div>
 			</Provider>
-			
 		);
 	}
 }

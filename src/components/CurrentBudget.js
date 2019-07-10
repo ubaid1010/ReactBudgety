@@ -4,15 +4,18 @@ import total from '../selectors/total';
 import formatNum from '../selectors/formatNum';
 
 class CurrentBudget extends React.Component {
-  render() {
+	render() {
 		return (
 			<div className="grand-total">
 				<p>Available amount:</p>
 				<p className="current-budget">
-				&#8377; {formatNum((total(this.props.income) - total(this.props.expenses)).toFixed(2))}
+					&#8377;
+					{formatNum(
+						(total(this.props.income) - total(this.props.expenses)).toFixed(2)
+					)}
 				</p>
 			</div>
-		)
+		);
 	}
 }
 
